@@ -1,6 +1,5 @@
 import db from "./config/db.mjs";
-import app from "./index.mjs";
-
+import app from "./index.mjs"
 db.connection.once("open", () => console.log("✅ Connected to DB"))
   .on("error", (err) => console.log("❌ DB connection error -->", err));
 
