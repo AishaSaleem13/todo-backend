@@ -1,15 +1,14 @@
 {
   "name": "backend-of-todo",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERN Task Management Backend",
+  "author": "Your Name",
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.mjs",
+  "type": "module",          
+  "main": "server.mjs",     
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.mjs",
-    "dev": "nodemon ./api/server.mjs"
+    "dev": "nodemon server.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
