@@ -1,14 +1,11 @@
 {
   "name": "backend-of-todo",
   "version": "1.0.0",
-  "description": "MERN Task Management Backend",
-  "author": "Your Name",
-  "license": "ISC",
-  "type": "module",          
-  "main": "server.mjs",     
+  "type": "module",
+  "main": "server.mjs",
   "scripts": {
-    "start": "node server.mjs",
-    "dev": "nodemon server.mjs"
+    "start": "node api/server.mjs",
+    "dev": "nodemon api/server.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
