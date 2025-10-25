@@ -6,7 +6,7 @@ title:{
     required:true
 },
 tasks:{
-    type:[String],
+    type:String,
     required:true
 }
 },
