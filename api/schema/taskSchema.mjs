@@ -8,6 +8,10 @@ title:{
 tasks:{
     type:String,
     required:true
+},
+completed:{
+  type:Boolean,
+ required:false
 }
 },
 {timestamps:true}
