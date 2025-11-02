@@ -31,7 +31,7 @@ export const Login = async(req,res)=>{
       return;
     }
 
-     const compare =user.comarePassword(Password)
+     const compare =user.comparepassword(Password)
 
       if (!compare) {
       res.status(401).send({ message: 'Invalid Password' });
