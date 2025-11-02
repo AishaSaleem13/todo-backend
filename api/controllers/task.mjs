@@ -16,8 +16,8 @@
  export const posttask=async (req,res) => {
     try {
       console.log("Bodydata",req.body)
-      const {tasks,title}=req.body
-      if (!tasks||!title){
+      const {tasks,title,date}=req.body
+      if (!tasks||!title ||!date){
         return res.status(400).send("define your task and title ")
       }
       const task=new Task({

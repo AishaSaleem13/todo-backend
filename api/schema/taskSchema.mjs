@@ -9,6 +9,10 @@ tasks:{
     type:String,
     required:true
 },
+date:{
+  type:String,
+  required:true
+},
 completed:{
   type:Boolean,
  required:false,
