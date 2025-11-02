@@ -24,7 +24,7 @@ export const Login = async(req,res)=>{
         console.log(req.body)
         const {Email,Password}=req.body
       
-        const user = await UserCollection.findOne(Email)
+        const user = await UserCollection.findOne({Email})
 
          if (!user) {
       res.status(404).send({ message: 'User Not Found' });
