@@ -43,7 +43,7 @@ console.log(Password,"simple password")
   return bcrypt.compareSync(Password,user.Password)
 };
 
-userSchema.methods.generateToken = function() {
+UserSchema.methods.generateToken = function() {
     const { _id } = this
     const token = jwt.sign({ _id }, jwtSecret)
      return token
