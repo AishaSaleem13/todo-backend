@@ -2,7 +2,7 @@
 import UserCollection from "../models/Auth_models.mjs"
   export const get =async (req,res) => {
    
-        const user = await UserCollection.Find()
+        const user = await UserCollection.findByIdAndUpdateind()
        res.send({message:'Data Fetched Successfully',Data:users}) 
     }
  
@@ -24,7 +24,7 @@ export const Login = async(req,res)=>{
         console.log(req.body)
         const {Email,Password}=req.body
       
-        const user =UserCollection.Find(Email)
+        const user =UserCollection.find(Email)
 
          if (!user) {
       res.status(404).send({ message: 'User Not Found' });
