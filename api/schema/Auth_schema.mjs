@@ -45,7 +45,7 @@ console.log(Password,"simple password")
 
 UserSchema.methods.generateToken = function() {
     const { _id } = this
-    const token = jwt.sign({ _id }, jwtSecret)
+    const token = jwt.sign({ _id },jwtSecret )
      return token
    
 }
