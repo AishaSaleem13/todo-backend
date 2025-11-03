@@ -13,6 +13,11 @@ date:{
   type:String,
   required:true
 },
+category:{
+  type:String,
+  enum:["work","office","gym","personal"],
+  default:"personal"
+},
 completed:{
   type:Boolean,
  required:false,

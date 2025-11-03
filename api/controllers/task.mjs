@@ -16,13 +16,15 @@
  export const posttask=async (req,res) => {
     try {
       console.log("Bodydata",req.body)
-      const {tasks,title,date}=req.body
+      const {tasks,title,date,category }=req.body
       if (!tasks||!title ||!date){
         return res.status(400).send("define your task and title ")
       }
       const task=new Task({
          tasks,
-         title
+         title,
+         date,
+         category
       })
      await  task.save()
     return  res.status(201).send({message:"posting successful"})
